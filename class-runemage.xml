@@ -5,8 +5,8 @@
         <description>A magical class specializing in the drawing and infusing of runes to create enhancements.</description>
         <author>Custom</author>
         <update version="1.0.0">
-		<file name="class-runemage.xml" url="https://github.com/eskerg/dnd/blob/main/class-runemage.xml"/> 
-		<update/>
+            <file name="class-runemage.xml" url="https://github.com/eskerg/dnd/blob/main/class-runemage.xml"/> 
+        </update>
     </info>
     <class>
         <name>Rune Mage</name>
@@ -63,34 +63,6 @@
             <level>4</level>
             <description><![CDATA[
                 At the 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>8</level>
-            <description><![CDATA[
-                At the 8th level and again at 12th, 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>12</level>
-            <description><![CDATA[
-                At the 12th level and again at 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>16</level>
-            <description><![CDATA[
-                At the 16th level and again at 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>19</level>
-            <description><![CDATA[
-                At the 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
             ]]></description>
         </feature>
         <feature>
