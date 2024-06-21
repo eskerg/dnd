@@ -1,92 +1,145 @@
-<class name="Rune Mage">
-    <hitpoints>
-        <hit_dice>1k6 na poziom Rune Mage</hit_dice>
-        <hit_points_at_1st_level>6 + modyfikator z Kondycji</hit_points_at_1st_level>
-        <hit_points_at_higher_levels>1k6 (lub 4) + modyfikator z Kondycji na poziom Rune Mage</hit_points_at_higher_levels>
-    </hitpoints>
-    <proficiencies>
-        <armor>Brak</armor>
-        <weapons>Proste bronie</weapons>
-        <tools>Zestaw do kaligrafii</tools>
-        <saving_throws>Inteligencja, Mądrość</saving_throws>
-        <skills>Wybierz dwie z następujących: Arcana, History, Insight, Investigation, Religion</skills>
-    </proficiencies>
-    <equipment>
-        <item>Prosta broń (twój wybór)</item>
-        <item>Komponentowa torba</item>
-        <item>Zestaw do kaligrafii</item>
-        <item>Księga run</item>
-    </equipment>
-    <features>
-        <feature level="1">
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Rune Mage</name>
+        <description>A magical class specializing in the drawing and infusing of runes to create enhancements.</description>
+        <author>Custom</author>
+        <update version="1.0.0">
+		<file name="class-runemage.xml" url="https://github.com/eskerg/dnd/blob/main/class-runemage.xml"/> 
+		<update/>
+    </info>
+    <class>
+        <name>Rune Mage</name>
+        <hd>1d6</hd>
+        <proficiency>Intelligence</proficiency>
+        <proficiency>Wisdom</proficiency>
+        <armorProficiency>
+            <armor>Medium armor</armor>
+        </armorProficiency>
+        <weaponProficiency>
+            <weapon>Runic Axe</weapon>
+        </weaponProficiency>
+        <skillChoices count="2">
+            <skill>Arcana</skill>
+            <skill>History</skill>
+            <skill>Insight</skill>
+            <skill>Investigation</skill>
+            <skill>Religion</skill>
+        </skillChoices>
+        <equipment>
+            <item>Runic Axe</item>
+            <item>Medium Armor</item>
+            <item>Explorer's Pack</item>
+        </equipment>
+        <feature>
             <name>Rune Drawing</name>
-            <description>
-                Jako Rune Mage, możesz rysować magiczne runy, które zapewniają różne efekty. Na 1. poziomie, wybierasz 3 runy z listy dostępnych run. Każda runa wymaga akcji, aby ją narysować, a jej efekt trwa przez określony czas lub do momentu spełnienia warunków zakończenia.
-                <runes>
-                    <rune>
-                        <name>Runa Ochrony</name>
-                        <effect>Tworzy barierę ochronną wokół celu, dając mu dodatkowe punkty wytrzymałości równe 1k4 + twój modyfikator z Inteligencji na 1 godzinę.</effect>
-                    </rune>
-                    <rune>
-                        <name>Runa Szybkości</name>
-                        <effect>Zwiększa szybkość poruszania się celu o 10 stóp na 1 minutę.</effect>
-                    </rune>
-                    <rune>
-                        <name>Runa Ostrza</name>
-                        <effect>Zwiększa obrażenia zadawane przez broń o 1k4 na 1 minutę.</effect>
-                    </rune>
-                </runes>
-            </description>
+            <level>1</level>
+            <description><![CDATA[
+                At 1st level, you can draw magical runes to create various effects. You start with three runes.
+                <b>Rune of Protection:</b> Provides temporary hit points equal to 1d4 + Intelligence modifier for 1 hour.
+                <b>Rune of Speed:</b> Increases the target's speed by 10 feet for 1 minute.
+                <b>Rune of Blade:</b> Adds 1d4 damage to a weapon for 1 minute.
+            ]]></description>
         </feature>
-        <feature level="2">
+        <feature>
             <name>Rune Infusion</name>
-            <description>Na 2. poziomie, możesz infuzować runy w przedmioty, aby dać im trwałe efekty. Proces ten trwa 1 godzinę i wymaga poświęcenia zasobów równej wartości 50 złotych monet na poziom runy.</description>
+            <level>2</level>
+            <description><![CDATA[
+                Starting at 2nd level, you can infuse runes into items, granting them permanent effects. This process takes 1 hour and 50 gold per rune level.
+            ]]></description>
         </feature>
-        <feature level="3">
+        <feature>
             <name>Rune Mastery</name>
-            <description>Na 3. poziomie, wybierasz specjalizację w jednym z trzech szkół runicznych: Szkoła Ochrony, Szkoła Mocy, Szkoła Przekształcenia.</description>
-            <subclasses>
-                <subclass>
-                    <name>Szkoła Ochrony</name>
-                    <description>Specjalizujesz się w runach defensywnych, które zwiększają wytrzymałość i odporność.</description>
-                    <feature>
-                        <name>Runic Shield</name>
-                        <description>Możesz narysować runę, która tworzy tymczasową tarczę wokół celu, dając mu bonus +2 do AC na 10 minut.</description>
-                    </feature>
-                </subclass>
-                <subclass>
-                    <name>Szkoła Mocy</name>
-                    <description>Specjalizujesz się w runach, które zwiększają obrażenia i ofensywne zdolności.</description>
-                    <feature>
-                        <name>Runic Strike</name>
-                        <description>Możesz narysować runę na broni, która daje jej dodatkowe obrażenia 1k6 od energii magicznej na 10 minut.</description>
-                    </feature>
-                </subclass>
-                <subclass>
-                    <name>Szkoła Przekształcenia</name>
-                    <description>Specjalizujesz się w runach, które zmieniają właściwości przedmiotów i otoczenia.</description>
-                    <feature>
-                        <name>Runic Transmutation</name>
-                        <description>Możesz narysować runę na obiekcie, zmieniając jego materiał na inny o tej samej lub mniejszej wartości przez 1 godzinę.</description>
-                    </feature>
-                </subclass>
-            </subclasses>
+            <level>3</level>
+            <description><![CDATA[
+                At 3rd level, choose a rune specialization: Protection, Power, or Transmutation.
+                <b>Protection:</b> Gain the ability to draw the Runic Shield, adding +2 to AC for 10 minutes.
+                <b>Power:</b> Gain the ability to draw the Runic Strike, adding 1d6 magical damage to a weapon for 10 minutes.
+                <b>Transmutation:</b> Gain the ability to draw the Runic Transmutation, changing the material of an object for 1 hour.
+            ]]></description>
         </feature>
-        <feature level="4">
+        <feature>
             <name>Ability Score Improvement</name>
-            <description>Na 4. poziomie i ponownie na 8., 12., 16. i 19. poziomie, możesz zwiększyć jeden wynik atrybutu o 2 lub dwa wyniki atrybutów o 1. Jak zwykle, nie możesz zwiększyć atrybutu powyżej 20 za pomocą tej cechy.</description>
+            <level>4</level>
+            <description><![CDATA[
+                At the 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
+            ]]></description>
         </feature>
-        <feature level="5">
+        <feature>
+            <name>Ability Score Improvement</name>
+            <level>8</level>
+            <description><![CDATA[
+                At the 8th level and again at 12th, 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
+            ]]></description>
+        </feature>
+        <feature>
+            <name>Ability Score Improvement</name>
+            <level>12</level>
+            <description><![CDATA[
+                At the 12th level and again at 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
+            ]]></description>
+        </feature>
+        <feature>
+            <name>Ability Score Improvement</name>
+            <level>16</level>
+            <description><![CDATA[
+                At the 16th level and again at 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
+            ]]></description>
+        </feature>
+        <feature>
+            <name>Ability Score Improvement</name>
+            <level>19</level>
+            <description><![CDATA[
+                At the 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
+            ]]></description>
+        </feature>
+        <feature>
             <name>Greater Rune Drawing</name>
-            <description>Na 5. poziomie, możesz rysować bardziej zaawansowane runy. Wybierasz 2 nowe runy z listy run zaawansowanych.</description>
+            <level>5</level>
+            <description><![CDATA[
+                At 5th level, you can draw advanced runes. Choose two new runes from the advanced rune list.
+                <b>Rune of Power:</b> Adds 1d6 magical damage.
+                <b>Rune of Resistance:</b> Adds +1 AC and resistance to a damage type.
+                <b>Rune of Speed:</b> Allows an additional attack as a bonus action.
+            ]]></description>
         </feature>
-        <feature level="6">
+        <feature>
             <name>Runic Empowerment</name>
-            <description>Na 6. poziomie, twoje runy stają się bardziej potężne. Efekty run, które rysujesz, trwają dwa razy dłużej.</description>
+            <level>6</level>
+            <description><![CDATA[
+                At 6th level, your runes' effects last twice as long.
+            ]]></description>
         </feature>
-        <feature level="7">
-            <name>Zaawansowane umiejętności</name>
-            <description>Na wyższych poziomach, zdobywasz nowe zdolności i runy, które zwiększają twoje możliwości jako Rune Mage. Możesz tworzyć bardziej skomplikowane runy, a czas ich rysowania i efektywność ulegają poprawie.</description>
+        <feature>
+            <name>Runic Infusion Mastery</name>
+            <level>7</level>
+            <description><![CDATA[
+                At 7th level, you can infuse two runes into one item, combining their effects. This process takes an additional 2 hours and costs 50 more gold.
+            ]]></description>
         </feature>
-    </features>
-</class>
+        <feature>
+            <name>Greater Runic Smithing</name>
+            <level>9</level>
+            <description><![CDATA[
+                At 9th level, you can create advanced weapons and armor with more complex runic effects.
+            ]]></description>
+        </feature>
+        <feature>
+            <name>Master Rune Drawing</name>
+            <level>10</level>
+            <description><![CDATA[
+                At 10th level, you can draw master runes. Choose two from the master rune list.
+                <b>Rune of Resurrection:</b> Allows the casting of Resurrection spell.
+                <b>Rune of Transcendence:</b> Grants immunity to one damage type.
+                <b>Rune of Mastery:</b> Doubles the duration and effect of any one rune.
+            ]]></description>
+        </feature>
+        <feature>
+            <name>Ultimate Rune Craft</name>
+            <level>20</level>
+            <description><![CDATA[
+                At 20th level, your mastery of runes reaches its peak. All runes you draw last indefinitely until dismissed, and you can draw up to three runes simultaneously on a single item or person.
+            ]]></description>
+        </feature>
+    </class>
+</elements>
