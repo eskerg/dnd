@@ -1,146 +1,363 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
-        <name>Rune Mage</name>
-        <description>A magical class specializing in the drawing and infusing of runes to create enhancements.</description>
-        <author>Custom</author>
-        <update version="1.0.0">
-            <file name="class-runemage.xml" url="https://github.com/eskerg/dnd/blob/main/class-runemage.xml"/> 
-        </update>
-    </info>
-    <class>
-        <name>Rune Mage</name>
-        <hd>1d6</hd>
-        <proficiency>Intelligence</proficiency>
-        <proficiency>Wisdom</proficiency>
-        <armorProficiency>
-            <armor>Medium armor</armor>
-        </armorProficiency>
-        <weaponProficiency>
-            <weapon>Runic Axe</weapon>
-        </weaponProficiency>
-        <skillChoices count="2">
-            <skill>Arcana</skill>
-            <skill>History</skill>
-            <skill>Insight</skill>
-            <skill>Investigation</skill>
-            <skill>Religion</skill>
-        </skillChoices>
-        <equipment>
-            <item>Runic Axe</item>
-            <item>Medium Armor</item>
-            <item>Explorer's Pack</item>
-        </equipment>
-        <feature>
-            <name>Rune Drawing</name>
-            <level>1</level>
-            <description><![CDATA[
-                At 1st level, you can draw magical runes to create various effects. You start with three runes.
-                <b>Rune of Protection:</b> Provides temporary hit points equal to 1d4 + Intelligence modifier for 1 hour.
-                <b>Rune of Speed:</b> Increases the target's speed by 10 feet for 1 minute.
-                <b>Rune of Blade:</b> Adds 1d4 damage to a weapon for 1 minute.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Rune Infusion</name>
-            <level>2</level>
-            <description><![CDATA[
-                Starting at 2nd level, you can infuse runes into items, granting them permanent effects. This process takes 1 hour and 50 gold per rune level.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Rune Mastery</name>
-            <level>3</level>
-            <description><![CDATA[
-                At 3rd level, choose a rune specialization: Protection, Power, or Transmutation.
-                <b>Protection:</b> Gain the ability to draw the Runic Shield, adding +2 to AC for 10 minutes.
-                <b>Power:</b> Gain the ability to draw the Runic Strike, adding 1d6 magical damage to a weapon for 10 minutes.
-                <b>Transmutation:</b> Gain the ability to draw the Runic Transmutation, changing the material of an object for 1 hour.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>4</level>
-            <description><![CDATA[
-                At the 4th level and again at 8th, 12th, 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>8</level>
-            <description><![CDATA[
-                At the 8th level and again at 12th, 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>12</level>
-            <description><![CDATA[
-                At the 12th level and again at 16th, and 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>16</level>
-            <description><![CDATA[
-                At the 16th level and again at 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ability Score Improvement</name>
-            <level>19</level>
-            <description><![CDATA[
-                At the 19th level, you can increase one ability score by 2 or two ability scores by 1. You cannot increase an ability score above 20 using this feature.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Greater Rune Drawing</name>
-            <level>5</level>
-            <description><![CDATA[
-                At 5th level, you can draw advanced runes. Choose two new runes from the advanced rune list.
-                <b>Rune of Power:</b> Adds 1d6 magical damage.
-                <b>Rune of Resistance:</b> Adds +1 AC and resistance to a damage type.
-                <b>Rune of Speed:</b> Allows an additional attack as a bonus action.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Runic Empowerment</name>
-            <level>6</level>
-            <description><![CDATA[
-                At 6th level, your runes' effects last twice as long.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Runic Infusion Mastery</name>
-            <level>7</level>
-            <description><![CDATA[
-                At 7th level, you can infuse two runes into one item, combining their effects. This process takes an additional 2 hours and costs 50 more gold.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Greater Runic Smithing</name>
-            <level>9</level>
-            <description><![CDATA[
-                At 9th level, you can create advanced weapons and armor with more complex runic effects.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Master Rune Drawing</name>
-            <level>10</level>
-            <description><![CDATA[
-                At 10th level, you can draw master runes. Choose two from the master rune list.
-                <b>Rune of Resurrection:</b> Allows the casting of Resurrection spell.
-                <b>Rune of Transcendence:</b> Grants immunity to one damage type.
-                <b>Rune of Mastery:</b> Doubles the duration and effect of any one rune.
-            ]]></description>
-        </feature>
-        <feature>
-            <name>Ultimate Rune Craft</name>
-            <level>20</level>
-            <description><![CDATA[
-                At 20th level, your mastery of runes reaches its peak. All runes you draw last indefinitely until dismissed, and you can draw up to three runes simultaneously on a single item or person.
-            ]]></description>
-        </feature>
-    </class>
-</elements>
+  <info>
+    <name>Runemage</name>
+    <update version="1.0.0">
+      <file name="runemage.xml" url="https://github.com/eskerg/dnd/blob/main/class-runemage.xml" />
+    </update>
+  </info>
 
+  <!-- Start of Runemage Class -->
+  <element name="Runemage" type="Class" source="Homebrew" id="ID_HB_CLASS_RUNEMAGE">
+    <description>
+      <![CDATA[
+      <p>The Runemage is a master of ancient runes, drawing power from the very fabric of magic. They inscribe runes to enhance their abilities and those of their allies, and to unleash powerful effects.</p>
+      ]]>
+    </description>
+
+    <setters>
+      <set name="hitDice">d8</set>
+      <set name="primaryAbility">Intelligence</set>
+      <set name="savingThrows">Intelligence, Wisdom</set>
+      <set name="armorProficiencies">Light armor</set>
+      <set name="weaponProficiencies">Simple weapons</set>
+      <set name="tools">None</set>
+      <set name="skills">
+        Choose two from Arcana, History, Insight, Investigation, Nature, and Religion
+      </set>
+      <set name="equipment">
+        <li>(a) a quarterstaff or (b) a dagger</li>
+        <li>(a) a scholar's pack or (b) an explorer's pack</li>
+        <li>A spellbook</li>
+      </set>
+    </setters>
+
+    <progression>
+      <level value="1" feature="Rune Casting, Spellcasting" />
+      <level value="2" feature="Rune Mastery" />
+      <level value="3" feature="Runic Tradition" />
+      <level value="4" feature="Ability Score Improvement" />
+      <level value="5" feature="Runic Empowerment" />
+      <level value="6" feature="Runic Tradition Feature" />
+      <level value="7" feature="Rune Mastery Improvement" />
+      <level value="8" feature="Ability Score Improvement" />
+      <level value="9" feature="Runic Knowledge" />
+      <level value="10" feature="Runic Tradition Feature" />
+      <level value="11" feature="Rune Mastery Improvement" />
+      <level value="12" feature="Ability Score Improvement" />
+      <level value="13" feature="Greater Rune Empowerment" />
+      <level value="14" feature="Runic Tradition Feature" />
+      <level value="15" feature="Master of Runes" />
+      <level value="16" feature="Ability Score Improvement" />
+      <level value="17" feature="Ultimate Rune Mastery" />
+      <level value="18" feature="Runic Tradition Feature" />
+      <level value="19" feature="Ability Score Improvement" />
+      <level value="20" feature="Archmage of Runes" />
+    </progression>
+
+    <autolevel level="1">
+      <grant feature="ID_HB_FEATURE_RUNE_CASTING" />
+      <grant feature="ID_HB_FEATURE_SPELLCASTING_RUNEMAGE" />
+    </autolevel>
+
+    <autolevel level="2">
+      <grant feature="ID_HB_FEATURE_RUNE_MASTERY" />
+    </autolevel>
+
+    <autolevel level="3">
+      <grant feature="ID_HB_FEATURE_RUNIC_TRADITION" />
+    </autolevel>
+
+    <autolevel level="4">
+      <grant feature="ID_HB_FEATURE_ABILITY_SCORE_IMPROVEMENT" />
+    </autolevel>
+
+    <autolevel level="5">
+      <grant feature="ID_HB_FEATURE_RUNIC_EMPOWERMENT" />
+    </autolevel>
+
+    <autolevel level="6">
+      <grant feature="ID_HB_FEATURE_RUNIC_TRADITION_FEATURE" />
+    </autolevel>
+
+    <autolevel level="7">
+      <grant feature="ID_HB_FEATURE_RUNE_MASTERY_IMPROVEMENT" />
+    </autolevel>
+
+    <autolevel level="8">
+      <grant feature="ID_HB_FEATURE_ABILITY_SCORE_IMPROVEMENT" />
+    </autolevel>
+
+    <autolevel level="9">
+      <grant feature="ID_HB_FEATURE_RUNIC_KNOWLEDGE" />
+    </autolevel>
+
+    <autolevel level="10">
+      <grant feature="ID_HB_FEATURE_RUNIC_TRADITION_FEATURE" />
+    </autolevel>
+
+    <autolevel level="11">
+      <grant feature="ID_HB_FEATURE_RUNE_MASTERY_IMPROVEMENT" />
+    </autolevel>
+
+    <autolevel level="12">
+      <grant feature="ID_HB_FEATURE_ABILITY_SCORE_IMPROVEMENT" />
+    </autolevel>
+
+    <autolevel level="13">
+      <grant feature="ID_HB_FEATURE_GREATER_RUNE_EMPOWERMENT" />
+    </autolevel>
+
+    <autolevel level="14">
+      <grant feature="ID_HB_FEATURE_RUNIC_TRADITION_FEATURE" />
+    </autolevel>
+
+    <autolevel level="15">
+      <grant feature="ID_HB_FEATURE_MASTER_OF_RUNES" />
+    </autolevel>
+
+    <autolevel level="16">
+      <grant feature="ID_HB_FEATURE_ABILITY_SCORE_IMPROVEMENT" />
+    </autolevel>
+
+    <autolevel level="17">
+      <grant feature="ID_HB_FEATURE_ULTIMATE_RUNE_MASTERY" />
+    </autolevel>
+
+    <autolevel level="18">
+      <grant feature="ID_HB_FEATURE_RUNIC_TRADITION_FEATURE" />
+    </autolevel>
+
+    <autolevel level="19">
+      <grant feature="ID_HB_FEATURE_ABILITY_SCORE_IMPROVEMENT" />
+    </autolevel>
+
+    <autolevel level="20">
+      <grant feature="ID_HB_FEATURE_ARCHMAGE_OF_RUNES" />
+    </autolevel>
+
+    <!-- Spellcasting Feature -->
+    <element name="Spellcasting" type="Feature" source="Homebrew" id="ID_HB_FEATURE_SPELLCASTING_RUNEMAGE">
+      <description>
+        <![CDATA[
+        <p>As a student of arcane runes, you have a spellbook containing spells that show the first glimmerings of your true power.</p>
+        <p><b>Cantrips</b></p>
+        <p>You know two cantrips of your choice from the Runemage spell list. You learn additional Runemage cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Runemage table.</p>
+        <p><b>Spellbook</b></p>
+        <p>At 1st level, you have a spellbook containing six 1st-level Runemage spells of your choice.</p>
+        <p><b>Preparing and Casting Spells</b></p>
+        <p>The Runemage table shows how many spell slots you have to cast your Runemage spells of 1st level and higher. To cast one of these Runemage spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.</p>
+        <p>You prepare the list of Runemage spells that are available for you to cast, choosing from the Runemage spell list. When you do so, choose a number of Runemage spells equal to your Intelligence modifier + your Runemage level (minimum of one spell). The spells must be of a level for which you have spell slots.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Rune Casting Feature -->
+    <element name="Rune Casting" type="Feature" source="Homebrew" id="ID_HB_FEATURE_RUNE_CASTING">
+      <description>
+        <![CDATA[
+        <p>At 1st level, you can inscribe magical runes into your spellbook and onto your equipment, allowing you to enhance your abilities and those of your allies. You learn two runes of your choice, which are detailed at the end of the class description. You learn additional runes as you gain levels in this class, as shown in the Runes Known column of the Runemage table.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Rune Mastery Feature -->
+    <element name="Rune Mastery" type="Feature" source="Homebrew" id="ID_HB_FEATURE_RUNE_MASTERY">
+      <description>
+        <![CDATA[
+        <p>At 2nd level, your knowledge of runes allows you to gain deeper insights into their power. You can now inscribe two additional runes, and you gain proficiency with calligrapher's supplies.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Runic Tradition Feature -->
+    <element name="Runic Tradition" type="Feature" source="Homebrew" id="ID_HB_FEATURE_RUNIC_TRADITION">
+      <description>
+        <![CDATA[
+        <p>At 3rd level, you choose a runic tradition that shapes your practice of rune magic: Guardian, Sage, or Warden, all detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th level.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Ability Score Improvement Feature -->
+    <element name="Ability Score Improvement" type="Feature" source="Homebrew" id="ID_HB_FEATURE_ABILITY_SCORE_IMPROVEMENT">
+      <description>
+        <![CDATA[
+        <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Runic Empowerment Feature -->
+    <element name="Runic Empowerment" type="Feature" source="Homebrew" id="ID_HB_FEATURE_RUNIC_EMPOWERMENT">
+      <description>
+        <![CDATA[
+        <p>At 5th level, your runes become more potent. The effects of the runes you inscribe last twice as long.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Rune Mastery Improvement Feature -->
+    <element name="Rune Mastery Improvement" type="Feature" source="Homebrew" id="ID_HB_FEATURE_RUNE_MASTERY_IMPROVEMENT">
+      <description>
+        <![CDATA[
+        <p>At 7th level, your mastery of runes deepens. You can inscribe one additional rune, and you gain advantage on saving throws against spells and effects that deal damage.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Runic Knowledge Feature -->
+    <element name="Runic Knowledge" type="Feature" source="Homebrew" id="ID_HB_FEATURE_RUNIC_KNOWLEDGE">
+      <description>
+        <![CDATA[
+        <p>At 9th level, your understanding of runes allows you to decipher magical inscriptions and texts. You gain advantage on Intelligence (Arcana) checks related to runes and magical writing.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Greater Rune Empowerment Feature -->
+    <element name="Greater Rune Empowerment" type="Feature" source="Homebrew" id="ID_HB_FEATURE_GREATER_RUNE_EMPOWERMENT">
+      <description>
+        <![CDATA[
+        <p>At 13th level, the effects of your runes become even more powerful. When you inscribe a rune, you can choose to empower it, doubling its effect. You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Master of Runes Feature -->
+    <element name="Master of Runes" type="Feature" source="Homebrew" id="ID_HB_FEATURE_MASTER_OF_RUNES">
+      <description>
+        <![CDATA[
+        <p>At 15th level, your proficiency with runes reaches its peak. You can inscribe an additional two runes, and the time required to inscribe a rune is halved.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Ultimate Rune Mastery Feature -->
+    <element name="Ultimate Rune Mastery" type="Feature" source="Homebrew" id="ID_HB_FEATURE_ULTIMATE_RUNE_MASTERY">
+      <description>
+        <![CDATA[
+        <p>At 17th level, your control over rune magic is unrivaled. You can use your Greater Rune Empowerment feature twice before needing to finish a long rest, and the duration of your runes' effects is tripled.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Archmage of Runes Feature -->
+    <element name="Archmage of Runes" type="Feature" source="Homebrew" id="ID_HB_FEATURE_ARCHMAGE_OF_RUNES">
+      <description>
+        <![CDATA[
+        <p>At 20th level, you become an archmage of runes. You can inscribe any number of runes, and the effects of your runes are permanent until you choose to dismiss them. Additionally, you gain resistance to all damage types.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Runes -->
+    <element name="Rune of Fire" type="Feature" source="Homebrew" id="ID_HB_RUNE_FIRE">
+      <description>
+        <![CDATA[
+        <p>Inscribing this rune onto a weapon or piece of armor grants it fiery power. A weapon inscribed with this rune deals an additional 1d6 fire damage on a hit. Armor inscribed with this rune grants resistance to fire damage.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Protection" type="Feature" source="Homebrew" id="ID_HB_RUNE_PROTECTION">
+      <description>
+        <![CDATA[
+        <p>This rune grants the wearer increased resilience. While wearing armor inscribed with this rune, the wearer gains a +1 bonus to AC and saving throws.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Speed" type="Feature" source="Homebrew" id="ID_HB_RUNE_SPEED">
+      <description>
+        <![CDATA[
+        <p>Inscribing this rune onto a pair of boots or similar footwear grants the wearer increased speed. The wearer's walking speed increases by 10 feet.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Strength" type="Feature" source="Homebrew" id="ID_HB_RUNE_STRENGTH">
+      <description>
+        <![CDATA[
+        <p>This rune enhances the wearer's strength. While wearing armor inscribed with this rune, the wearer gains advantage on Strength checks and Strength saving throws.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Water" type="Feature" source="Homebrew" id="ID_HB_RUNE_WATER">
+      <description>
+        <![CDATA[
+        <p>Inscribing this rune onto a weapon or piece of armor grants it the power of water. A weapon inscribed with this rune deals an additional 1d6 cold damage on a hit. Armor inscribed with this rune grants resistance to cold damage.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Wind" type="Feature" source="Homebrew" id="ID_HB_RUNE_WIND">
+      <description>
+        <![CDATA[
+        <p>This rune grants the wearer the ability to move with the swiftness of the wind. The wearer can Dash as a bonus action while wearing armor inscribed with this rune.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Earth" type="Feature" source="Homebrew" id="ID_HB_RUNE_EARTH">
+      <description>
+        <![CDATA[
+        <p>Inscribing this rune onto a weapon or piece of armor grants it the power of earth. A weapon inscribed with this rune deals an additional 1d6 bludgeoning damage on a hit. Armor inscribed with this rune grants resistance to bludgeoning damage.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Shadow" type="Feature" source="Homebrew" id="ID_HB_RUNE_SHADOW">
+      <description>
+        <![CDATA[
+        <p>This rune grants the wearer the ability to move unnoticed. The wearer gains advantage on Stealth checks while wearing armor inscribed with this rune.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Light" type="Feature" source="Homebrew" id="ID_HB_RUNE_LIGHT">
+      <description>
+        <![CDATA[
+        <p>Inscribing this rune onto a weapon or piece of armor grants it the power of light. A weapon inscribed with this rune deals an additional 1d6 radiant damage on a hit. Armor inscribed with this rune grants resistance to radiant damage.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Health" type="Feature" source="Homebrew" id="ID_HB_RUNE_HEALTH">
+      <description>
+        <![CDATA[
+        <p>This rune enhances the wearer's vitality. While wearing armor inscribed with this rune, the wearer gains advantage on Constitution checks and Constitution saving throws.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Magic" type="Feature" source="Homebrew" id="ID_HB_RUNE_MAGIC">
+      <description>
+        <![CDATA[
+        <p>Inscribing this rune onto a weapon or piece of armor grants it the power of arcane magic. A weapon inscribed with this rune deals an additional 1d6 force damage on a hit. Armor inscribed with this rune grants resistance to force damage.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Insight" type="Feature" source="Homebrew" id="ID_HB_RUNE_INSIGHT">
+      <description>
+        <![CDATA[
+        <p>This rune enhances the wearer's perception. While wearing armor inscribed with this rune, the wearer gains advantage on Wisdom (Insight) checks and can see invisible creatures within 30 feet.</p>
+        ]]>
+      </description>
+    </element>
+
+    <element name="Rune of Luck" type="Feature" source="Homebrew" id="ID_HB_RUNE_LUCK">
+      <description>
+        <![CDATA[
+        <p>This rune grants the wearer increased fortune. Once per day, the wearer can reroll one attack roll, ability check, or saving throw while wearing armor inscribed with this rune.</p>
+        ]]>
+      </description>
+    </element>
+
+    <!-- Add more runes and features as necessary -->
+    
+  </element>
+  <!-- End of Runemage Class -->
+
+</elements>
